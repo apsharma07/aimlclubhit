@@ -1,0 +1,27 @@
+.pageShell {
+  position: relative;
+  overflow: hidden;
+}
+
+.bgOrbOne,
+.bgOrbTwo {
+  position: fixed;
+  width: 36rem;
+  height: 36rem;
+  border-radius: 999px;
+  pointer-events: none;
+  filter: blur(80px);
+  z-index: -1;
+}
+
+.bgOrbOne {
+  top: -10rem;
+  left: -6rem;
+  background: rgba(67, 140, 255, 0.28);
+}
+
+.bgOrbTwo {
+  bottom: -12rem;
+  right: -8rem;
+  background: rgba(144, 76, 255, 0.22);
+}

@@ -1,0 +1,36 @@
+.footer {
+  border-top: 1px solid rgba(131, 162, 255, 0.2);
+  padding: 2rem 0;
+  background: rgba(1, 7, 32, 0.55);
+}
+
+.footer :global(.container) {
+  display: grid;
+  gap: 0.7rem;
+  place-items: center;
+  text-align: center;
+}
+
+.footer h2 {
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.socials a {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(161, 191, 255, 0.35);
+  background: rgba(18, 33, 85, 0.7);
+}
+
+.footer p {
+  color: var(--text-muted);
+  margin: 0;
+}

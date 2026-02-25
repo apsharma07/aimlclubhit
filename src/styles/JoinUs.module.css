@@ -1,0 +1,46 @@
+.join {
+  margin: 0 auto 4.25rem;
+  border-radius: 1.2rem;
+  padding: 1.7rem;
+  border: 1px solid rgba(132, 159, 255, 0.28);
+  background: linear-gradient(145deg, rgba(11, 30, 78, 0.9), rgba(34, 24, 95, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  animation: fadeUp 1000ms ease both;
+}
+
+.kicker {
+  color: var(--accent-cyan);
+  margin: 0 0 0.2rem;
+}
+
+.join h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.join p {
+  color: var(--text-muted);
+  margin: 0.8rem 0 0;
+  max-width: 60ch;
+}
+
+.button {
+  align-self: center;
+  background: linear-gradient(135deg, #50d8ff, #7c58ff);
+  color: #061028;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  padding: 0.8rem 1.2rem;
+  white-space: nowrap;
+  box-shadow: 0 10px 30px rgba(76, 189, 255, 0.35);
+}
+
+@media (max-width: 760px) {
+  .join {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

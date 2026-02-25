@@ -1,0 +1,78 @@
+.events {
+  padding: 1rem 0 4.5rem;
+  animation: fadeUp 900ms ease both;
+}
+
+.header {
+  margin-bottom: 1.6rem;
+}
+
+.header h2 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.header p {
+  color: var(--text-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid rgba(139, 166, 255, 0.22);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background: linear-gradient(160deg, rgba(11, 24, 71, 0.83), rgba(22, 16, 78, 0.62));
+  box-shadow: 0 0 0 1px rgba(102, 170, 255, 0.08);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(49, 246, 255, 0.64);
+  box-shadow: 0 12px 36px rgba(42, 149, 255, 0.28);
+}
+
+.date {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.card h3 {
+  margin: 0.35rem 0 0.4rem;
+}
+
+.card p {
+  color: var(--text-muted);
+}
+
+.readMore {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  background: transparent;
+  border: 1px solid rgba(140, 174, 255, 0.45);
+  color: var(--text-main);
+  border-radius: 0.7rem;
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+}
+
+.readMore:hover {
+  border-color: rgba(49, 246, 255, 0.8);
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
