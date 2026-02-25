@@ -39,6 +39,28 @@ section {
   scroll-margin-top: 6rem;
 }
 
+/* Generic reveal animation used by all major sections */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(36px) scale(0.985);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
 @keyframes fadeUp {
   from {
     opacity: 0;

@@ -2,6 +2,10 @@ import styles from '../styles/Hero.module.css';
 
 function Hero() {
   return (
+    <section id="home" className={`${styles.hero} container`} data-reveal>
+      <div className={styles.content}>
+        <p className={styles.eyebrow}>University Innovation Collective</p>
+        <h1 className={styles.title}>Explore the Future of AI &amp; Machine Learning</h1>
     <section id="home" className={`${styles.hero} container`}>
       <div className={styles.content}>
         <p className={styles.eyebrow}>University Innovation Collective</p>
@@ -22,6 +26,12 @@ function Hero() {
       </div>
 
       <div className={styles.visualCard}>
+        <img
+          className={styles.heroImage}
+          src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80"
+          alt="Students collaborating around futuristic AI dashboards"
+        />
+        <div className={styles.imageOverlay} aria-hidden="true" />
         <div className={styles.visualGlow} />
         <div className={styles.visualPanel}>
           <h2>Collaborative AI Lab</h2>

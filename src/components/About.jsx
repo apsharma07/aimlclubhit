@@ -3,6 +3,7 @@ import styles from '../styles/About.module.css';
 
 function About() {
   return (
+    <section id="about" className={`${styles.about} container`} data-reveal>
     <section id="about" className={`${styles.about} container`}>
       <div className={styles.header}>
         <h2>About Our Club</h2>
