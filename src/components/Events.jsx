@@ -4,6 +4,7 @@ import styles from '../styles/Events.module.css';
 function Events() {
   return (
     <section id="events" className={`${styles.events} container`} data-reveal>
+    <section id="events" className={`${styles.events} container`}>
       <div className={styles.header}>
         <h2>Upcoming Events</h2>
         <p>Hands-on sessions and competitive challenges designed to turn ideas into impact.</p>

@@ -13,6 +13,13 @@ A modern, responsive one-page university club website with a dark futuristic vis
 - Upcoming events cards with hover glow effects
 - Join CTA section and social footer
 - Scroll reveal animations and animated ambient background effects
+## Sections
+- Sticky blurred navbar
+- Hero with CTAs
+- About with focus areas
+- Upcoming events with glowing cards
+- Join section
+- Footer with social links
 
 ## Run locally
 ```bash

@@ -11,6 +11,10 @@ function Navbar() {
     <header className={styles.navWrap}>
       <nav className={`${styles.navbar} container`}>
         <a href="#home" className={styles.logo} onClick={closeMenu}>
+  return (
+    <header className={styles.navWrap}>
+      <nav className={`${styles.navbar} container`}>
+        <a href="#home" className={styles.logo}>
           <span className={styles.logoDot} />
           AI/ML Club
         </a>
@@ -32,6 +36,10 @@ function Navbar() {
           {navLinks.map((link) => (
             <li key={link.id}>
               <a href={`#${link.id}`} className={styles.link} onClick={closeMenu}>
+        <ul className={styles.links}>
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <a href={`#${link.id}`} className={styles.link}>
                 {link.label}
               </a>
             </li>
