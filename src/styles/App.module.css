@@ -1,0 +1,51 @@
+.pageShell {
+  position: relative;
+  overflow: hidden;
+}
+
+.bgOrbOne,
+.bgOrbTwo {
+  position: fixed;
+  width: 36rem;
+  height: 36rem;
+  border-radius: 999px;
+  pointer-events: none;
+  filter: blur(80px);
+  z-index: -2;
+  animation: floatPulse 9s ease-in-out infinite alternate;
+}
+
+.bgOrbOne {
+  top: -10rem;
+  left: -6rem;
+  background: rgba(67, 140, 255, 0.28);
+}
+
+.bgOrbTwo {
+  bottom: -12rem;
+  right: -8rem;
+  background: rgba(144, 76, 255, 0.22);
+  animation-delay: 2s;
+}
+
+.gridOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  opacity: 0.2;
+  background-image: linear-gradient(rgba(73, 112, 255, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(73, 112, 255, 0.18) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at center, black 38%, transparent 100%);
+}
+
+@keyframes floatPulse {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(0, -18px, 0) scale(1.08);
+  }
+}
